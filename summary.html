@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mulah | Summary</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="brand">MULAH</h1>
+    <h2>Summary</h2>
+    <p class="subtext">Here is your submitted information:</p>
+
+    <div class="summary-box">
+      <p><strong>Phone Number:</strong><br><span id="showPhone"></span></p>
+      <p><strong>Name:</strong><br><span id="showName"></span></p>
+      <p><strong>Email:</strong><br><span id="showEmail"></span></p>
+      <p><strong>Birthday:</strong><br><span id="showBirthday"></span></p>
+    </div>
+
+    <footer>Powered by <a href="https://MulahRewards.com">MulahRewards.com</a></footer>
+  </div>
+
+  <script>
+    document.getElementById("showPhone").textContent = localStorage.getItem("phone") || "-";
+    document.getElementById("showName").textContent = localStorage.getItem("name") || "-";
+    document.getElementById("showEmail").textContent = localStorage.getItem("email") || "-";
+    document.getElementById("showBirthday").textContent = localStorage.getItem("birthday") || "-";
+  </script>
+</body>
+</html>

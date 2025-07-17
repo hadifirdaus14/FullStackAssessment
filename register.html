@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Page</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <h1 class="brand">MULAH</h1>
+            <h2>Registration</h2>
+            <p class="subtext">Please fill up your details.</p>
+
+            <input type="text" id="name" placeholder="Enter Name">
+            <p class="error" id="nameErr"></p>
+            
+            <div class="birthday">
+                <input type="text" id="day" placeholder="DD" maxlength="2">
+                <input type="text" id="month" placeholder="MM" maxlength="2">
+                <input type="text" id="year" placeholder="YYYY" maxlength="4">
+            </div>
+            <p class="error" id="birthdayErr"></p>
+
+            <input type="email" id="email" placeholder="Enter Address">
+            <p class="error" id="emailErr"></p>
+
+            <label><input type="checkbox" id="noEmail">No email address</label><br><br>
+
+            <button onclick="register()">Continue</button>
+
+            <footer>Powered by <a href="https://MulahRewards.com">MulahRewards.com</a></footer>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
